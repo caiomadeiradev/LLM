@@ -1,5 +1,6 @@
 from ollama import chat
 import sys
+from langfuse import Langfuse
 
 stream = chat(
     model='llama3.2',

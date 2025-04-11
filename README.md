@@ -39,3 +39,21 @@ Try:
 ```
 sudo apt install postgresql-server-dev-16
 ```
+
+### Docker compose up
+In case of:
+```
+caiomadeira@caiomadeira-G3-3500:~/Desktop/langfuse$ sudo docker compose up
+[sudo] password for caiomadeira: 
+[+] Running 6/6
+ ✔ Container langfuse-redis-1            Running                                         0.0s 
+ ✔ Container langfuse-postgres-1         Created                                         0.0s 
+ ✔ Container langfuse-clickhouse-1       Running                                         0.0s 
+ ✔ Container langfuse-minio-1            Running                                         0.0s 
+ ✔ Container langfuse-langfuse-web-1     Running                                         0.0s 
+ ✔ Container langfuse-langfuse-worker-1  Runni...                                        0.0s 
+Attaching to clickhouse-1, langfuse-web-1, langfuse-worker-1, minio-1, postgres-1, redis-1
+Gracefully stopping... (press Ctrl+C again to force)
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint langfuse-postgres-1 (302e863df72631a724cc57537d74db43a877b71a2f747c4d65b498855b8db5cb): failed to bind host port for 127.0.0.1:5432:172.18.0.7:5432/tcp: address already in use
+
+```
